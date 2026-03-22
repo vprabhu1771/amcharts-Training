@@ -151,6 +151,8 @@ am5.ready(function () {
 ```php
 use App\Http\Controllers\ReportController;
 
-Route::get('/reports/clients/map', [ReportController::class, 'map']);
+Route::get('/reports', [ReportController::class, 'index']);
+
+Route::get('/ajax/getuser', [ReportController::class, 'getUser']);
 ```
 ![Image](1.PNG)
